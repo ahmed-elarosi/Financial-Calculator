@@ -1,4 +1,5 @@
 def calculate_finances(monthly_income: float, tax_rate: float, currency: str) -> None:
+
     monthly_tax: float = monthly_income * (tax_rate / 100)
     monthly_net_income: float = monthly_income - monthly_tax
     yearly_salary: float = monthly_income * 12
@@ -16,4 +17,8 @@ def calculate_finances(monthly_income: float, tax_rate: float, currency: str) ->
     print("-------------------------------------------------------------")
 
 
-calculate_finances(1550, 20, "€")
+# calculate_finances(1550, 20, "€")
+
+if __name__ == "__main__":
+    print(__name__)
+    calculate_finances(1550, 20, "€")
