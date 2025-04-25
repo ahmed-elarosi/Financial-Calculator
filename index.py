@@ -432,6 +432,6 @@
 # )
 
 
-from main import calculate_finances
+from main import main
 
-calculate_finances(2000, 10, "€")
+main()
