@@ -17,8 +17,14 @@ def calculate_finances(monthly_income: float, tax_rate: float, currency: str) ->
     print("-------------------------------------------------------------")
 
 
-# calculate_finances(1550, 20, "€")
+def main() -> None:
+    monthly_income: float = float(input("Enter your monthly salary:"))
+    tax_rate: float = float(input("Enter your tax rate (%):"))
+    tax_rate: float = float(input("Enter your tax rate (%):"))
+    tax_rate: float = float(input("Enter your tax rate (%):"))
+    tax_rate: float = float(input("Enter your tax rate (%):"))
+    calculate_finances(monthly_income, tax_rate, currency="€")
+
 
 if __name__ == "__main__":
-    print(__name__)
-    calculate_finances(1550, 20, "€")
+    main()
