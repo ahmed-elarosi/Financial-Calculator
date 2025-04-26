@@ -432,6 +432,6 @@
 # )
 
 
-from main import main
+from finance_calculator import main
 
 main()
