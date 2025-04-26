@@ -1,9 +1,17 @@
+def prompt_float(prompt: str) -> float:
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("! Please enter a valid number.")
+
+
 def expenses() -> tuple[float, float, float, float, float, float]:
-    monthly_rent: float = float(input("Enter your monthly rent:"))
+    monthly_rent: float = prompt_float("Enter your monthly rent:")
     yearly_rent: float = monthly_rent * 12
-    monthly_food_exp: float = float(input("Enter your monthly food expenses:"))
+    monthly_food_exp: float = prompt_float("Enter your monthly food expenses:")
     yearly_food_exp: float = monthly_food_exp * 12
-    monthly_gym: float = float(input("Enter your monthly gym membership:"))
+    monthly_gym: float = prompt_float("Enter your monthly gym membership:")
     yearly_gym_exp: float = monthly_gym * 12
 
     return (
@@ -39,7 +47,7 @@ def calculate_finances(monthly_income: float, tax_rate: float, currency: str) ->
     monthly_net_after_expenses = monthly_net_income - total_monthly_expenses
     yearly_net_after_expenses = yearly_net_income - total_yearly_expenses
 
-    print("-------------------------------------------------------------")
+    print("\n" + "-" * 60)
     print(f"Monthly Income: {currency}{monthly_income:,.2f}")
     print(f"Tax Rate: {tax_rate:,.0f}%")
     print(f"Monthly Tax: {currency}{monthly_tax:,.2f}")
@@ -64,12 +72,13 @@ def calculate_finances(monthly_income: float, tax_rate: float, currency: str) ->
     print(f"  Gym:  {currency}{yearly_gym_exp:,.2f}")
     print(f"  Total Yearly Expenses: {currency}{total_yearly_expenses:,.2f}")
     print(f"Yearly Income After Expenses: {currency}{yearly_net_after_expenses:,.2f}")
-    print("-------------------------------------------------------------")
+    print("\n" + "-" * 60)
 
 
 def main() -> None:
-    monthly_income: float = float(input("Enter your monthly salary:"))
-    tax_rate: float = float(input("Enter your tax rate (%):"))
+
+    monthly_income: float = prompt_float("Enter your monthly salary:")
+    tax_rate: float = prompt_float("Enter your tax rate (%):")
     calculate_finances(monthly_income, tax_rate, currency="€")
 
 
