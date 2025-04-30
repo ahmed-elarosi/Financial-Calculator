@@ -432,6 +432,39 @@
 # )
 
 
-from finance_calculator import main
+# def gridChallenge(grid):
+#     sorted_grid = ["".join(sorted(row.lower())) for row in grid]
+#     print(sorted_grid)
 
-main()
+#     n = len(sorted_grid)
+#     m = len(sorted_grid[0])
+
+#     for col in range(m):
+#         print("C", col)
+#         for row in range(n - 1):
+#             print("R", row)
+#             if sorted_grid[row][col] > sorted_grid[row + 1][col]:
+#                 return "NO"
+
+#     return "YES"
+
+
+# grid = ["ebacd", "fghij", "olmkn", "trpqs", "xywuv"]
+# print(gridChallenge(grid))
+
+
+# def superDigit(n, k):
+#     initial_digits = sum(int(digit) for digit in n) * k
+
+#     def recursive_digit(x):
+#         if x < 10:
+#             return x
+#         final_digit = recursive_digit(sum(int(d) for d in str(x)))
+#         return final_digit
+
+#     return recursive_digit(initial_digits)
+
+
+# n = "9875"
+# k = 4
+# print(superDigit(n, k))
