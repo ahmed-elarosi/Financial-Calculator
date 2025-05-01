@@ -8,7 +8,9 @@ def prompt_float(prompt: str) -> float:
 
 def calculate_split(total_amount: float, number_of_people: int, currency: str) -> None:
     if number_of_people < 1:
-        raise ValueError("Dude you have to pay for yourself :)")
+        raise ValueError("No one Wanna pay")
+    elif number_of_people == 1:
+        print(f"Dude you have to pay for yourself :) {currency}{total_amount:,.2f}")
     share_per_person: float = total_amount / number_of_people
 
     print()

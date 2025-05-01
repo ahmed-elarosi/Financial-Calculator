@@ -468,3 +468,26 @@
 # n = "9875"
 # k = 4
 # print(superDigit(n, k))
+
+
+# def minimumBribes(q):
+#     total_bribes = 0
+
+#     for current_pos, person in enumerate(q):
+#         original_pos = person - 1
+#         if original_pos - current_pos > 2:
+#             print("Too chaotic")
+#             return
+#         for j in range(max(0, original_pos - 1), current_pos):
+#             print(q[j], person)
+#             if q[j] > person:
+#                 total_bribes += 1
+#     print(total_bribes)
+
+
+# q = [1, 2, 5, 3, 7, 8, 6, 4]
+# qq = [1, 2, 5, 7, 3, 8, 6, 4]
+
+# minimumBribes(q)
+# # print(60 * "-")
+# # print(minimumBribes(qq))
