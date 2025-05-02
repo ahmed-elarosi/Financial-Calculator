@@ -74,7 +74,8 @@ def calculate_split(total_amount: float, number_of_people: int, currency: str) -
                 total_percent += percent
                 if total_percent >= 100.0:
                     print(
-                        f"\nError: You've already assigned {total_percent}%. It must be less than 100% before the last person."
+                        f"Error: You've already assigned {total_percent}%. "
+                        "It must be less than 100% before the last person.",
                     )
                     return
                 percentages.append(percent)
