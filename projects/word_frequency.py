@@ -1,6 +1,11 @@
 from collections import Counter
 import re
 
+def read_file(file_path:str) -> str:
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            return file.read()
+
 
 def get_frequency(text: str) -> list[tuple[str, int]]:
     lowered_text: str = text.lower()
