@@ -491,3 +491,82 @@
 # minimumBribes(q)
 # # print(60 * "-")
 # # print(minimumBribes(qq))
+
+
+# counter = 0
+# while counter < 5:
+#     print("Counter:", counter)
+#     counter += 1
+
+
+# fruits = ["apple", "banana", "cherry", "Water"]
+# # print(fruits[:4])
+# fruits.append("kiwi")
+# print(fruits)
+# fruits.remove(fruits[3])
+# print(fruits)
+# fruits.insert(3, "Ahmed")
+# print(fruits)
+# fruits.extend("Hamdi")
+# print(fruits)
+# fruits.pop()
+# print(fruits)
+# del fruits[5:]
+# print(fruits)
+
+# coordinates = (10, 20)
+# print(coordinates[0])
+
+# person = {"name": "John", "age": 30, "city": "New York"}
+# print(person["age"])
+# person["age"] = 31
+# print(person)
+# del person["city"]
+# print(person)
+# person.pop("name")
+# print(person)
+
+# numbers = {1, 2, 3, 3, 4}
+
+# print(numbers)
+# numbers.add(5)
+# print(numbers)
+# numbers.remove(2)
+# print(numbers)
+
+# set_a = {1, 2, 3}
+# set_b = {3, 4, 5}
+
+# print(set_a | set_b)  # Union: {1, 2, 3, 4, 5}
+# print(set_a & set_b)  # Intersection: {3}
+# print(set_a - set_b)  # Difference: {1, 2}
+# print(set_b - set_a)
+
+counter = 0
+
+
+# def increment():
+#     global counter
+#     counter += 1
+
+
+# increment()
+# print(counter)
+
+
+# add = lambda a, b, c: a + b * c
+
+# print(add(2, 2, 3))
+
+
+# numbers = [1, 2, 3, 4, 4]
+# squared = list(map(lambda x: x**3, numbers))
+# print(squared)
+# even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+# print(even_numbers)
+
+# from functools import reduce
+
+# product = reduce(lambda x, y: x * y, numbers)
+
+# print(product)
